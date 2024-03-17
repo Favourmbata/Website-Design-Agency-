@@ -1,48 +1,48 @@
-.mainCont{
+.general{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*align-content: center;*/
-
-    margin-left: 6%;
-    /*margin-bottom: 4%;*/
+    margin-left: 80px;
 
 }
+.mainCont{
 
-
-.thirdCont{
-    margin-left: 6%;
+    display: flex;
+    margin-top: 100px;
+    border: none;
+    border-radius: 45px;
 }
-
 
 .description{
      display: flex;
-    flex-direction: row;
-    align-content: center;
-    gap: normal;
-    /*justify-content: center;*/
-    /*gap: 10px;*/
+    column-gap: 70px;
+    margin-bottom: 27px;
 
 }
-.group1{
+.description1{
     display: flex;
-    gap: 10px;
-    margin-left: 40%;
-    margin-bottom: 20px;
-    /*padding: 10px 10px;*/
+    column-gap: 48px;
 }
-.group2{
+.group1 ,.group2,.group3,.group4{
     display: flex;
-    /*align-content: center;*/
-    /*flex-direction: row;*/
-    /*gap: 10px;*/
-    margin-top: 60px;
-    margin-right: 50px;
-    /*margin-left: 20px;*/
+
 }
 
-
-.iconPic{
+.iconPic {
     color: #d9ebde;
-   width: 145%
+    width: 60%
+
+}
+.majorDiv{
+    margin-left: 75px;
+    margin-bottom: 40px;
+}
+.iconPic2{
+    width: 60%;
+}
+.iconPic3{
+
+    width: 60%;
+}
+
+.iconPic4{
+    width: 60%;
 }
