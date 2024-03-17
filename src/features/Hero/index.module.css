@@ -1,0 +1,55 @@
+.major{
+    background-color:  #F2F3F5;
+}
+.main{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 200px;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-evenly;
+}
+
+
+
+
+.insight{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    font-size: 50px;
+
+}
+.button {
+    padding: 10px 35px;
+    /*text-align: center;*/
+    margin-top: 13px;
+    border-radius: 5px;
+    background-color: #66BA6A;
+    border: none;
+    color: white;
+
+}
+.img{
+    width: 55%;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*font-size: 60px;*/
+}
+.b1{
+    width: 8px;
+}
+.b2{
+    width: 8px;
+}
+.b3{
+    width: 8px;
+}
+
+.client{
+    text-align: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,30 @@
+.mainCont{
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.midCont{
+    font-size: 30px;
+
+
+
+}
+
+.thirdCont{
+    margin-top: 40px;
+}
+.learn{
+    padding: 10px 10px;
+    width: 90px;
+    border-right: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+   background-color: #66BA6A;
+    color: #F2F3F5;
+    margin-right: 66px;
+}
+img{
+    gap: 10px;
+}
