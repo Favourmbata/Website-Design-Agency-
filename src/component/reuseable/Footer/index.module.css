@@ -1,0 +1,69 @@
+.mainCont{
+    background-color: #263238;
+   display: flex;
+    padding: 64px 165px 64px 165px;
+    gap: 125px;
+
+
+}
+.secondCont{
+   height: 200px;
+    width: 350px;
+    gap: 40px;
+    padding-left: 8%;
+
+}
+
+.nextDD {
+    display: flex;
+    gap: 2px;
+}
+
+.followIcon{
+    width: 176px;
+   gap: 10px;
+   display: flex;
+    margin-top: 20px;
+
+}
+.core{
+    color: #F2F3F5;
+}
+.copy{
+    color: #F2F3F5;
+}
+.reserve{
+    color: #F2F3F5;
+}
+.sub2{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1%;
+}
+.sub3{
+    width: 225px;
+    height: 95px;
+    gap: 24px;
+}
+
+.grouped{
+    display: flex;
+    width: 635px;
+    height: 200px;
+    color: #F2F3F5;
+    gap: 30px;
+
+
+}
+.address{
+    width: 225px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    opacity: 20%;
+    color: #F2F3F5;
+    justify-content: space-between;
+    background-color:  #545e63;
+
+
+}

@@ -1,0 +1,28 @@
+.mainCont{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.midCont {
+    display: flex;
+    margin-bottom: 20px;
+}
+.imageIcon{
+    display: flex;
+    width: 80%;
+}
+.learnButton{
+    padding: 10px 10px;
+    width: 90px;
+    border-right: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #66BA6A;
+    color: #F2F3F5;
+    margin-right: 66px;
+
+}
+

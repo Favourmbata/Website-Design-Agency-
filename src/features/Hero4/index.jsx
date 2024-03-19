@@ -9,7 +9,8 @@ const Hero4 = ()=>{
             <div>
                 <img src={image} alt={""}/>
             </div>
-           <div>
+
+            <div>
 
             <div className={style.midCont}>
                 <h5>The unseen of spending three <span style={{display:"block"}}>

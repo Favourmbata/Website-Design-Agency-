@@ -1,0 +1,17 @@
+.mainCont{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.demo{
+    display: flex;
+    color: #F2F3F5;
+    background-color: #66BA6A;
+    border-radius: 4%;
+    border: none;
+    width: 120px;
+    height: 35px;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}

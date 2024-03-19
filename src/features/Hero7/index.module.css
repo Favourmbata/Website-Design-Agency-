@@ -1,0 +1,38 @@
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F7FA;
+
+
+
+}
+
+.linkDiv {
+    display: flex;
+
+}
+.text{
+    margin-top: 10px;
+}
+
+
+.picture{
+    display: flex;
+    /*width: 80%;*/
+
+}
+.themes{
+    color: #66BA6A;
+}
+.iconLogos{
+     display: flex;
+    gap: 5%;
+    margin-top: 5%;
+
+}
+
+
+.customer{
+    color: #66BA6A;
+    margin-top: 2%;
+}

@@ -9,13 +9,15 @@ const Hero5 = ()=>{
     return(
         <div className={style.general}>
             <div className={style.mainCont}>
+
                 <div>
-                    <div className={style.secondCont}>
+
+                    <div>
                         <h4>Helping a local business <span
                             style={{color: "#66BA6A", display: "block"}}>reinvent itself</span></h4>
                     </div>
 
-                    <div className={style.thirdCont}>
+                    <div>
                         <p>We reached here with our hard work and dedication</p>
                     </div>
 
