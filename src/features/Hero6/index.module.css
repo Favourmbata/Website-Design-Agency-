@@ -1,28 +1,120 @@
-.mainCont{
+/*.mainCont{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+
+
+/*.midCont {*/
+/*    display: flex;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+/*.imageIcon{*/
+/*    display: flex;*/
+/*    width: 80%;*/
+/*}*/
+/*.learnButton{*/
+/*    padding: 10px 10px;*/
+/*    width: 90px;*/
+/*    border-right: 20px;*/
+/*    margin-top: 20px;*/
+/*    border: none;*/
+/*    border-radius: 3px;*/
+/*    background-color: #66BA6A;*/
+/*    color: #F2F3F5;*/
+/*    margin-right: 66px;*/
+
+/*}*/
+
+/* index.module.css */
+
+/* Base styles for the component */
+/* index.module.css */
+
+/* Base styles for the component */
+.mainCont {
+    padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
-
 
 .midCont {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.imageIcon {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.middleDiv {
+    flex: 2;
+    text-align: left;
+}
+
+.middleDiv h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.middleDiv div {
+    font-size: 1rem;
+    color: #555;
     margin-bottom: 20px;
 }
-.imageIcon{
-    display: flex;
-    width: 80%;
-}
-.learnButton{
-    padding: 10px 10px;
-    width: 90px;
-    border-right: 20px;
-    margin-top: 20px;
+
+.learnButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
     border: none;
-    border-radius: 3px;
     background-color: #66BA6A;
-    color: #F2F3F5;
-    margin-right: 66px;
-
+    color: white;
+    border-radius: 5px;
 }
 
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .midCont {
+        flex-direction: column;
+    }
+
+    .middleDiv h3 {
+        font-size: 1.5rem;
+    }
+
+    .middleDiv div {
+        font-size: 0.875rem;
+    }
+
+    .learnButton {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .middleDiv h3 {
+        font-size: 1.25rem;
+    }
+
+    .middleDiv div {
+        font-size: 0.75rem;
+    }
+
+    .learnButton {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+}

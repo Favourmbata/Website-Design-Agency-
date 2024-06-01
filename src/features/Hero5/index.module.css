@@ -1,48 +1,168 @@
-.general{
+/*.general{*/
+/*    display: flex;*/
+/*    margin-left: 80px;*/
+
+/*}*/
+/*.mainCont{*/
+
+/*    display: flex;*/
+/*    margin-top: 100px;*/
+/*    border: none;*/
+/*    border-radius: 45px;*/
+/*}*/
+
+/*.description{*/
+/*     display: flex;*/
+/*    column-gap: 70px;*/
+/*    margin-bottom: 27px;*/
+
+/*}*/
+/*.description1{*/
+/*    display: flex;*/
+/*    column-gap: 48px;*/
+/*}*/
+/*.group1 ,.group2,.group3,.group4{*/
+/*    display: flex;*/
+
+/*}*/
+
+/*.iconPic {*/
+/*    color: #d9ebde;*/
+/*    width: 60%*/
+
+/*}*/
+/*.majorDiv{*/
+/*    margin-left: 75px;*/
+/*    margin-bottom: 40px;*/
+/*}*/
+/*.iconPic2{*/
+/*    width: 60%;*/
+/*}*/
+/*.iconPic3{*/
+
+/*    width: 60%;*/
+/*}*/
+
+/*.iconPic4{*/
+/*    width: 60%;*/
+/*}*/
+/* index.module.css */
+
+/* Base styles for the component */
+.general {
+    padding: 20px;
+}
+
+.mainCont {
     display: flex;
-    margin-left: 80px;
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.mainCont{
 
+.mainCont h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.mainCont p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.majorDiv {
     display: flex;
-    margin-top: 100px;
-    border: none;
-    border-radius: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.description{
-     display: flex;
-    column-gap: 70px;
-    margin-bottom: 27px;
-
-}
-.description1{
+.description, .description1 {
     display: flex;
-    column-gap: 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-.group1 ,.group2,.group3,.group4{
+
+.group1, .group2, .group3, .group4 {
     display: flex;
-
+    align-items: center;
+    gap: 10px;
 }
 
-.iconPic {
-    color: #d9ebde;
-    width: 60%
-
-}
-.majorDiv{
-    margin-left: 75px;
-    margin-bottom: 40px;
-}
-.iconPic2{
-    width: 60%;
-}
-.iconPic3{
-
-    width: 60%;
+.iconPic, .iconPic2, .iconPic3, .iconPic4 {
+    max-width: 50px;
+    height: auto;
 }
 
-.iconPic4{
-    width: 60%;
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .mainCont h4 {
+        font-size: 1.5rem;
+    }
+
+    .mainCont p {
+        font-size: 0.875rem;
+    }
+
+    .majorDiv {
+        flex-direction: column;
+    }
+
+    .description, .description1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .iconPic, .iconPic2, .iconPic3, .iconPic4 {
+        max-width: 40px;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .mainCont h4 {
+        font-size: 1.25rem;
+    }
+
+    .mainCont p {
+        font-size: 0.75rem;
+    }
+
+    .description, .description1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .iconPic, .iconPic2, .iconPic3, .iconPic4 {
+        max-width: 30px;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
 }

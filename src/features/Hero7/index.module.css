@@ -1,38 +1,139 @@
-.mainDiv{
+/*.mainDiv{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    background-color: #F5F7FA;*/
+
+
+
+/*}*/
+
+/*.linkDiv {*/
+/*    display: flex;*/
+
+/*}*/
+/*.text{*/
+/*    margin-top: 10px;*/
+/*}*/
+
+
+/*.picture{*/
+/*    display: flex;*/
+/*    !*width: 80%;*!*/
+
+/*}*/
+/*.themes{*/
+/*    color: #66BA6A;*/
+/*}*/
+/*.iconLogos{*/
+/*     display: flex;*/
+/*    gap: 5%;*/
+/*    margin-top: 5%;*/
+
+/*}*/
+
+
+/*.customer{*/
+/*    color: #66BA6A;*/
+/*    margin-top: 2%;*/
+/*}*/
+/* index.module.css */
+
+/* Base styles for the component */
+.mainDiv {
+    padding: 20px;
     display: flex;
     justify-content: center;
-    background-color: #F5F7FA;
-
-
-
+    align-items: center;
 }
 
 .linkDiv {
     display: flex;
-
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
 }
-.text{
-    margin-top: 10px;
+
+.picture {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
 }
 
+.text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
 
-.picture{
+.themes {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.iconLogos {
     display: flex;
-    /*width: 80%;*/
-
-}
-.themes{
-    color: #66BA6A;
-}
-.iconLogos{
-     display: flex;
-    gap: 5%;
-    margin-top: 5%;
-
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }
 
+.iconLogos img {
+    max-width: 50px;
+    height: auto;
+}
 
-.customer{
-    color: #66BA6A;
-    margin-top: 2%;
+.customer {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #5c23d8;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .linkDiv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 0.875rem;
+    }
+
+    .themes {
+        font-size: 1.25rem;
+    }
+
+    .iconLogos img {
+        max-width: 40px;
+    }
+
+    .customer {
+        font-size: 0.875rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .text {
+        font-size: 0.75rem;
+    }
+
+    .themes {
+        font-size: 1rem;
+    }
+
+    .iconLogos img {
+        max-width: 30px;
+    }
+
+    .customer {
+        font-size: 0.75rem;
+    }
 }

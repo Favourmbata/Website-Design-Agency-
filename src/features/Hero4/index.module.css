@@ -1,30 +1,109 @@
-.mainCont{
+/*.mainCont{*/
+/*    display: flex;*/
+/*    gap: 30px;*/
+/*    margin-top: 60px;*/
+/*}*/
+
+/*.midCont{*/
+/*    font-size: 30px;*/
+
+
+
+/*}*/
+
+/*.thirdCont{*/
+/*    margin-top: 40px;*/
+/*}*/
+/*.learn{*/
+/*    padding: 10px 10px;*/
+/*    width: 90px;*/
+/*    border-right: 20px;*/
+/*    margin-top: 20px;*/
+/*    border: none;*/
+/*    border-radius: 3px;*/
+/*   background-color: #66BA6A;*/
+/*    color: #F2F3F5;*/
+/*    margin-right: 66px;*/
+/*}*/
+/*img{*/
+/*    gap: 10px;*/
+/*}*/
+/* index.module.css */
+
+/* Base styles for the component */
+.mainCont {
     display: flex;
-    gap: 30px;
-    margin-top: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
 }
 
-.midCont{
-    font-size: 30px;
-
-
-
+.mainCont > div {
+    flex: 1;
 }
 
-.thirdCont{
-    margin-top: 40px;
+img {
+    max-width: 100%;
+    height: auto;
 }
-.learn{
-    padding: 10px 10px;
-    width: 90px;
-    border-right: 20px;
-    margin-top: 20px;
+
+.midCont h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.thirdCont p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.learn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
     border: none;
-    border-radius: 3px;
-   background-color: #66BA6A;
-    color: #F2F3F5;
-    margin-right: 66px;
+    background-color: #66BA6A;
+    color: white;
+    border-radius: 5px;
 }
-img{
-    gap: 10px;
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .mainCont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .midCont h5 {
+        font-size: 1.5rem;
+    }
+
+    .thirdCont p {
+        font-size: 0.875rem;
+    }
+
+    .learn {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .midCont h5 {
+        font-size: 1.25rem;
+    }
+
+    .thirdCont p {
+        font-size: 0.75rem;
+    }
+
+    .learn {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
 }

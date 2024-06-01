@@ -1,31 +1,129 @@
-.mainCont{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
+/*.mainCont{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.mid{*/
+/*    text-align: center;*/
+/*    font-size: 30px;*/
+/*    gap: 10px;*/
+/*}*/
+/*.p{*/
+/*    font-size: 15px;*/
+
+/*}*/
+/*.mapped{*/
+/*    box-shadow: none;*/
+/*    display: flex;*/
+/*    margin-top: 40px;*/
+/*    flex-direction: row;*/
+/*    gap: 22px;*/
+/*    text-align: center;*/
+/*}*/
+/*.title{*/
+/*    width: 120px;*/
+/*    margin-left: 35%;*/
+/*}*/
+/*.text{*/
+/*    justify-content: center;*/
+/*}*/
+/* index.module.css */
+
+/* Base styles for the component */
+.mainCont {
+    text-align: center;
+    padding: 20px;
 }
 
-.mid{
-    text-align: center;
-    font-size: 30px;
-    gap: 10px;
+.mid p {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
-.p{
-    font-size: 15px;
 
+.mid .p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
 }
-.mapped{
-    box-shadow: none;
+
+.mapped {
     display: flex;
-    margin-top: 40px;
-    flex-direction: row;
-    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mapped div {
+    max-width: 200px;
     text-align: center;
 }
-.title{
-    width: 120px;
-    margin-left: 35%;
+
+.mapped img {
+    max-width: 100%;
+    height: auto;
 }
-.text{
-    justify-content: center;
+
+.title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.text {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .mid p {
+        font-size: 1.5rem;
+    }
+
+    .mid .p {
+        font-size: 1.25rem;
+    }
+
+    .mapped div {
+        max-width: 150px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 0.875rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .mid p {
+        font-size: 1.25rem;
+    }
+
+    .mid .p {
+        font-size: 1rem;
+    }
+
+    .mapped {
+        gap: 10px;
+    }
+
+    .mapped div {
+        max-width: 120px;
+    }
+
+    .title {
+        font-size: 0.875rem;
+    }
+
+    .text {
+        font-size: 0.75rem;
+    }
 }
